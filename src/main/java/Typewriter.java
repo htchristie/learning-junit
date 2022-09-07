@@ -11,4 +11,8 @@ public class Typewriter {
     static boolean contains(String txt, String condition) {
         return txt.contains(condition);
     }
+
+    static String[] split(String str) {
+        return str.split(" ");
+    }
 }

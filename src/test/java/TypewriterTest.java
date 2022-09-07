@@ -23,5 +23,12 @@ public class TypewriterTest {
         assertTrue(Typewriter.contains("Test", "es"));
     }
 
+    @Test
+    @DisplayName("Checks if string was split into substrings")
+    void split_basic() {
+        String[] expected = {"this", "is", "a", "test"};
+        assertArrayEquals(expected, Typewriter.split("this is a test"));
+    }
+
 
 }
