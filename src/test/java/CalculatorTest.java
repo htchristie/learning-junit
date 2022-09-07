@@ -24,4 +24,16 @@ class CalculatorTest {
                 () -> assertEquals(4, Calculator.multiply(-2, -2)),
                 () -> assertEquals(0, Calculator.multiply(1, 0)));
     }
+
+    @Test
+    @DisplayName("Find min between two values")
+    void min() {
+        assertEquals(1, Calculator.min(1, 10));
+    }
+
+    @Test
+    @DisplayName("Find max between two values")
+    void max() {
+        assertEquals(10, Calculator.max(1, 10));
+    }
 }
