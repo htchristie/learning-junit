@@ -1,4 +1,7 @@
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -35,6 +38,13 @@ public class TypewriterTest {
         assertEquals(4, Typewriter.myLength("test"));
     }
 
+    @ParameterizedTest
+    @ValueSource(strings = {"this", "is", "a", "test"})
+    @DisplayName("String has a length greater than 0")
+    void length_parameterized(String str) {
+        assertTrue(Typewriter.myLength(str) > 0);
+    }
+
     @Test
     @DisplayName("When string is null, throw an exception")
     void length_exception() {
@@ -48,7 +58,14 @@ public class TypewriterTest {
         assertEquals("TEST", Typewriter.myToUpperCase("test"));
     }
 
-    @Test
+    @ParameterizedTest(name = "{0} to upper case is {1}")
+    @CsvSource(value = {"this, THIS", "is, IS", "'', ''", "test, TEST"})
+    @DisplayName("Transform string to upper case")
+    void toUpperCase_parameterized(String lowercase, String uppercase) {
+        assertEquals(uppercase, Typewriter.myToUpperCase(lowercase));
+    }
+
+    @RepeatedTest(10) // repeats test N times
     @DisplayName("String contains all elements of condition")
     void contains_basic() {
         assertTrue(Typewriter.myContains("Test", "es"));

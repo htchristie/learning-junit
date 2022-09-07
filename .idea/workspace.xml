@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="BeforeAll and AfterAll annotations">
+    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="improved display names for test methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Typewriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Typewriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,31 +50,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TypewriterTest.length_exception">
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-junit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.max" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-junit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="max" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TypewriterTest.contains_basic">
     <configuration name="TypewriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-junit" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypewriterTest.contains_basic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-junit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
+      <option name="METHOD_NAME" value="contains_basic" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,11 +80,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypewriterTest.split_basic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TypewriterTest.length_parameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-junit" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
-      <option name="METHOD_NAME" value="split_basic" />
+      <option name="METHOD_NAME" value="length_parameterized(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypewriterTest.toUpperCase_parameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-junit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
+      <option name="METHOD_NAME" value="toUpperCase_parameterized(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TypewriterTest.contains_basic" />
+        <item itemvalue="JUnit.TypewriterTest.toUpperCase_parameterized" />
+        <item itemvalue="JUnit.TypewriterTest.length_parameterized" />
         <item itemvalue="JUnit.TypewriterTest.length_exception" />
         <item itemvalue="JUnit.TypewriterTest" />
-        <item itemvalue="JUnit.TypewriterTest.split_basic" />
-        <item itemvalue="JUnit.CalculatorTest.max" />
-        <item itemvalue="JUnit.CalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662514033312</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="assertThrows usage">
+      <created>1662515186036</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662515186036</updated>
+    </task>
+    <task id="LOCAL-00007" summary="improved display names for test methods">
+      <created>1662515352180</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662515352181</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +188,8 @@
     <MESSAGE value="ArrayEquals assert" />
     <MESSAGE value="BeforeEach and AfterEach annotations" />
     <MESSAGE value="BeforeAll and AfterAll annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="BeforeAll and AfterAll annotations" />
+    <MESSAGE value="assertThrows usage" />
+    <MESSAGE value="improved display names for test methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved display names for test methods" />
   </component>
 </project>
