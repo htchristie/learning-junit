@@ -30,13 +30,13 @@ public class TypewriterTest {
     }
 
     @Test
-    @DisplayName("Checks string length")
+    @DisplayName("String length is 4")
     void length_basic() {
         assertEquals(4, Typewriter.myLength("test"));
     }
 
     @Test
-    @DisplayName("Checks exceptions for string length method")
+    @DisplayName("When string is null, throw an exception")
     void length_exception() {
         String str = null;
         assertThrows(NullPointerException.class, () -> Typewriter.myLength(str));
@@ -49,13 +49,13 @@ public class TypewriterTest {
     }
 
     @Test
-    @DisplayName("Checks if string contains all elements of condition")
+    @DisplayName("String contains all elements of condition")
     void contains_basic() {
         assertTrue(Typewriter.myContains("Test", "es"));
     }
 
     @Test
-    @DisplayName("Checks if string was split into substrings")
+    @DisplayName("String is split into four substrings")
     void split_basic() {
         String[] expected = {"this", "is", "a", "test"};
         assertArrayEquals(expected, Typewriter.mySplit("this is a test"));
