@@ -10,6 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 // @Disabled annotation can be used for an entire test class
 public class TypewriterTest {
 
+    /*
+    GOOD UNIT TESTS ARE
+    - readable
+    - fast
+    - isolated > independent of external systems like databases
+    - run often
+    */
+
     @BeforeAll // JUnit 4 -> @BeforeClass
     @DisplayName("Runs before any test case")
     static void beforeAll() {
