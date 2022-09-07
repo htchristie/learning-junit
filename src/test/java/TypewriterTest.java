@@ -3,6 +3,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.Locale;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 // @Disabled annotation can be used for an entire test class
@@ -78,5 +80,32 @@ public class TypewriterTest {
     void split_basic() {
         String[] expected = {"this", "is", "a", "test"};
         assertArrayEquals(expected, Typewriter.mySplit("this is a test"));
+    }
+
+
+    // NESTED TESTS
+
+    @Nested
+    @DisplayName("Empty string tests")
+    class EmptyStringTests {
+
+        private String str;
+
+        @BeforeEach
+        void setToEmpty() {
+            str = "";
+        }
+
+        @Test
+        @DisplayName("String length is equal to 0")
+        void lengthIsZero() {
+            assertEquals(0, Typewriter.myLength(str));
+        }
+
+        @Test
+        @DisplayName("Uppercase is empty")
+        void uppercaseIsEmpty() {
+            assertEquals("", Typewriter.myToUpperCase(str));
+        }
     }
 }
