@@ -32,25 +32,32 @@ public class TypewriterTest {
     @Test
     @DisplayName("Checks string length")
     void length_basic() {
-        assertEquals(4, Typewriter.length("test"));
+        assertEquals(4, Typewriter.myLength("test"));
+    }
+
+    @Test
+    @DisplayName("Checks exceptions for string length method")
+    void length_exception() {
+        String str = null;
+        assertThrows(NullPointerException.class, () -> Typewriter.myLength(str));
     }
 
     @Test
     @DisplayName("Transforms string to upper case")
     void toUpperCase_basic() {
-        assertEquals("TEST", Typewriter.toUpperCase("test"));
+        assertEquals("TEST", Typewriter.myToUpperCase("test"));
     }
 
     @Test
     @DisplayName("Checks if string contains all elements of condition")
     void contains_basic() {
-        assertTrue(Typewriter.contains("Test", "es"));
+        assertTrue(Typewriter.myContains("Test", "es"));
     }
 
     @Test
     @DisplayName("Checks if string was split into substrings")
     void split_basic() {
         String[] expected = {"this", "is", "a", "test"};
-        assertArrayEquals(expected, Typewriter.split("this is a test"));
+        assertArrayEquals(expected, Typewriter.mySplit("this is a test"));
     }
 }
