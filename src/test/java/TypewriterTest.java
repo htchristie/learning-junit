@@ -4,6 +4,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TypewriterTest {
 
+    @BeforeAll
+    @DisplayName("Runs before any test case")
+    static void beforeAll() {
+        System.out.println("Typewriter has been turned on.");
+    }
+
+    @AfterAll
+    @DisplayName("Runs after all test cases are done")
+    static void afterAll() {
+        System.out.println("Typewriter has been shut down.");
+    }
+
+
     @BeforeEach // JUnit 4 -> @Before
     @DisplayName("Runs before each test case")
     void beforeEach(TestInfo info) {
