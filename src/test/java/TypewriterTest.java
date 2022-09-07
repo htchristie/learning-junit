@@ -10,13 +10,13 @@ import static org.junit.jupiter.api.Assertions.*;
 // @Disabled annotation can be used for an entire test class
 public class TypewriterTest {
 
-    @BeforeAll
+    @BeforeAll // JUnit 4 -> @BeforeClass
     @DisplayName("Runs before any test case")
     static void beforeAll() {
         System.out.println("Typewriter has been turned on.");
     }
 
-    @AfterAll
+    @AfterAll // JUnit 4 -> @AfterClass
     @DisplayName("Runs after all test cases are done")
     static void afterAll() {
         System.out.println("Typewriter has been shut down.");
