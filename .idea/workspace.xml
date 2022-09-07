@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="create class Typewriter and its respective tests">
+    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="ArrayEquals assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Typewriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Typewriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TypewriterTest.split_basic">
+  <component name="RunManager" selected="JUnit.TypewriterTest">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-junit" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TypewriterTest.split_basic" />
         <item itemvalue="JUnit.TypewriterTest" />
+        <item itemvalue="JUnit.TypewriterTest.split_basic" />
         <item itemvalue="JUnit.CalculatorTest.max" />
         <item itemvalue="JUnit.CalculatorTest" />
       </list>
@@ -122,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662512486618</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ArrayEquals assert">
+      <created>1662513238896</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662513238896</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing all methods from class Calculator" />
     <MESSAGE value="create class Typewriter and its respective tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="create class Typewriter and its respective tests" />
+    <MESSAGE value="ArrayEquals assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="ArrayEquals assert" />
   </component>
 </project>

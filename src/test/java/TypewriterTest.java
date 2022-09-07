@@ -1,9 +1,20 @@
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TypewriterTest {
+
+    @BeforeEach // JUnit 4 -> @Before
+    @DisplayName("Runs before each test case")
+    void beforeEach(TestInfo info) {
+        System.out.println("Initializing test for '" + info.getDisplayName() + "'...");
+    }
+
+    @AfterEach // JUnit 4 -> @After
+    @DisplayName("Runs after each test case")
+    void afterEach() {
+        System.out.println("Test completed!");
+    }
 
     @Test
     @DisplayName("Checks string length")
@@ -29,6 +40,4 @@ public class TypewriterTest {
         String[] expected = {"this", "is", "a", "test"};
         assertArrayEquals(expected, Typewriter.split("this is a test"));
     }
-
-
 }
