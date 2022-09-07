@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
@@ -28,12 +30,18 @@ class CalculatorTest {
     @Test
     @DisplayName("Find min between two values")
     void min() {
-        assertEquals(1, Calculator.min(1, 10));
+        assertEquals(1, Calculator.myMin(1, 10));
     }
 
     @Test
     @DisplayName("Find max between two values")
     void max() {
-        assertEquals(10, Calculator.max(1, 10));
+        assertEquals(10, Calculator.myMax(1, 10));
+    }
+
+    @Test
+    @DisplayName("Count to 10000 in less than 5 seconds")
+    void performanceTest() {
+        assertTimeout(Duration.ofSeconds(5), () -> Calculator.countTo(10000));
     }
 }

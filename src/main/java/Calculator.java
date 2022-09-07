@@ -12,11 +12,17 @@ public class Calculator {
                 .reduce(1, (a, b) -> a * b);
     }
 
-    static int min(int value1, int value2) {
+    static int myMin(int value1, int value2) {
         return Math.min(value1, value2);
     }
 
-    static int max(int value1, int value2) {
+    static int myMax(int value1, int value2) {
         return Math.max(value1, value2);
+    }
+
+    static void countTo(int amount) {
+        for (int i = 0; i < amount; i++) {
+            System.out.println(i);
+        }
     }
 }

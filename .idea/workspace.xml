@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="improved display names for test methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" afterDir="false" />
+    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="parameterized tests and repeated tests">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +50,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TypewriterTest.contains_basic">
-    <configuration name="TypewriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CalculatorTest.performanceTest">
+    <configuration name="CalculatorTest.performanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-junit" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="performanceTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest.performanceTest" />
         <item itemvalue="JUnit.TypewriterTest.contains_basic" />
         <item itemvalue="JUnit.TypewriterTest.toUpperCase_parameterized" />
         <item itemvalue="JUnit.TypewriterTest.length_parameterized" />
         <item itemvalue="JUnit.TypewriterTest.length_exception" />
-        <item itemvalue="JUnit.TypewriterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662515352181</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="parameterized tests and repeated tests">
+      <created>1662517094575</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662517094575</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +198,7 @@
     <MESSAGE value="BeforeAll and AfterAll annotations" />
     <MESSAGE value="assertThrows usage" />
     <MESSAGE value="improved display names for test methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved display names for test methods" />
+    <MESSAGE value="parameterized tests and repeated tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="parameterized tests and repeated tests" />
   </component>
 </project>
