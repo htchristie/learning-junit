@@ -5,6 +5,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// @Disabled annotation can be used for an entire test class
 public class TypewriterTest {
 
     @BeforeAll
@@ -67,6 +68,7 @@ public class TypewriterTest {
 
     @RepeatedTest(10) // repeats test N times
     @DisplayName("String contains all elements of condition")
+    @Disabled // JUnit 4 -> @Ignored
     void contains_basic() {
         assertTrue(Typewriter.myContains("Test", "es"));
     }

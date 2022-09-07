@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="parameterized tests and repeated tests">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
+    <list default="true" id="5e1685dc-a9c6-4796-b667-5a21db9644b8" name="Changes" comment="assertTimeout performance test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TypewriterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.performanceTest">
+  <component name="RunManager" selected="JUnit.TypewriterTest">
     <configuration name="CalculatorTest.performanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-junit" />
       <option name="PACKAGE_NAME" value="" />
@@ -61,21 +61,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TypewriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-junit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TypewriterTest.contains_basic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-junit" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
       <option name="METHOD_NAME" value="contains_basic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TypewriterTest.length_exception" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-junit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TypewriterTest" />
-      <option name="METHOD_NAME" value="length_exception" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TypewriterTest" />
         <item itemvalue="JUnit.CalculatorTest.performanceTest" />
         <item itemvalue="JUnit.TypewriterTest.contains_basic" />
         <item itemvalue="JUnit.TypewriterTest.toUpperCase_parameterized" />
         <item itemvalue="JUnit.TypewriterTest.length_parameterized" />
-        <item itemvalue="JUnit.TypewriterTest.length_exception" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662517094575</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="assertTimeout performance test">
+      <created>1662517389346</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662517389346</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +205,7 @@
     <MESSAGE value="assertThrows usage" />
     <MESSAGE value="improved display names for test methods" />
     <MESSAGE value="parameterized tests and repeated tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="parameterized tests and repeated tests" />
+    <MESSAGE value="assertTimeout performance test" />
+    <option name="LAST_COMMIT_MESSAGE" value="assertTimeout performance test" />
   </component>
 </project>
